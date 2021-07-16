@@ -1,0 +1,107 @@
+/*debut menu*/
+.head_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.titre_resto {
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
+    font-family: shrikhand;
+    margin-left: 20px;
+}
+
+.logo_rest {
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
+}
+
+/*bloc  plat*/
+.menu_resto {
+    padding: 0px 20px;
+    margin-top: 20px;
+}
+
+.check {
+    display: flex;
+    height: 100%;
+    background-color: $tertiary-color;
+    font-size: 30px;
+    margin-right: -40px;
+    color: $white-color;
+    align-items: center;
+    justify-content: center;
+}
+
+.descri_plat {
+    display: inline;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    font-family: roboto;
+    border-top-left-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.prix {
+    display: flex;
+    background-color: white;
+    bottom: 0;
+    margin-bottom: -50px;
+    padding-right: 10px;
+    padding-top: 60px;
+}
+
+.page_menu {
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    margin-top: -90px;
+    position: relative;
+    width: 100%;
+    background-color: #F4F4F4;
+    padding-top: 15px;
+}
+
+.nom_resto {
+    margin: 15px 0 5px 0;
+}
+
+.bloc {
+    margin-top: 15px;
+    display: flex;
+    position: relative;
+    row-gap: 22px;
+    margin-bottom: 40px;
+    animation-name: animenu;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+
+    & h2 {
+        text-transform: uppercase;
+    }
+}
+
+.fas.fa-check-circle {
+    transform: rotate(-360deg);
+    transition: transform 500ms ease-in-out;
+}
+
+.plat {
+    display: flex;
+    height: auto;
+    cursor: pointer;
+    min-height: 90px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #cdcfba;
+    overflow: hidden;
+    animation: fadein;
+    animation-fill-mode: both;
+}
